@@ -2,10 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
-import Root from './routes/Root'
+import Root, { loader as rootLoader, action as rootAction } from './routes/Root'
 import ErrorPage from './ErrorPage'
 import Contact, { loader as contactLoader } from './routes/Contact'
-import { loader as rootLoader, action as rootAction } from './loaders'
 
 const router = createBrowserRouter([
   {
